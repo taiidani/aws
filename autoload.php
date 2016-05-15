@@ -1,5 +1,5 @@
 <?php
-namespace RND\AWS;
+namespace Rnd\Aws;
 
 require_once(__DIR__ . "/vendor/autoload.php");
 

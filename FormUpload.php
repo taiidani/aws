@@ -1,5 +1,5 @@
 <?php
-namespace RND\AWS;
+namespace Rnd\Aws;
 
 use DateTime;
 use Aws\S3\S3Client;

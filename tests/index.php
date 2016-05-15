@@ -1,5 +1,5 @@
 <?php
-namespace RND\AWS;
+namespace Rnd\Aws;
 
 date_default_timezone_set("UTC");
 require_once(__DIR__ . "/../autoload.php");

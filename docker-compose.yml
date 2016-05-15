@@ -13,7 +13,7 @@ services:
 
     composer:
         image: composer/composer:php5
-        command: update
+        command: install
         volumes:
             - ./:/app
 
