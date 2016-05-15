@@ -1,0 +1,27 @@
+version: '2'
+services:
+    web:
+        image: php:5.6-apache
+        ports:
+            - 8080:80
+        environment:
+            AWS_ACCESS_KEY_ID: "AKIAJCDT2SUA5372MBSQ"
+            AWS_SECRET_ACCESS_KEY: "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"
+        volumes:
+            - ./:/var/www
+            - ./tests:/var/www/html
+
+    composer:
+        image: composer/composer:php5
+        command: update
+        volumes:
+            - ./:/app
+
+    phpdoc:
+        image: php:5.6
+        depends_on:
+            - composer
+        command: "./vendor/bin/phpdoc -vv"
+        working_dir: "/run"
+        volumes:
+            - ./:/run

@@ -1,0 +1,17 @@
+{
+	"name": "Rnd/Aws",
+	"description": "Utility classes for working with the AWS API",
+	"authors": [
+		{
+			"name": "Ryan Nixon",
+			"email": "ryan@ryannixon.com"
+		}
+	],
+	"require": {
+		"aws/aws-sdk-php": "~3"
+	},
+
+	"require-dev": {
+		"phpdocumentor/phpdocumentor": "~2"
+	}
+}
